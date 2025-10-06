@@ -1,22 +1,26 @@
 <h1 id="title">
-    hello world
+    this is nikelesh
 </h1>
 <script>
 console.log(document.getElementById("title"))
 var para=document.getElementById("title")
-para.textContent="bye"
+para.textContent="this is nikelesh "
 </script>
 
-<input id="num1" value="5">
-<input id="num2" value="10">
+<input id="num1" >
+<input id="num2" >
 <button onclick="Add()">Add</button>
-<p id="result"></p>
+<p id="result">Result</p>
 
 <script>
 function Add(){
     var a=document.getElementById("num1")
     var b=document.getElementById("num2")
-    console.log(a+b)
+    console.log(a.value+b.value)
+    var a1=a.value
+    var b1=b.value 
+    var total=Number(a1)+Number(b1)
+    document.getElementById("result").textContent=total
 }
 
 
